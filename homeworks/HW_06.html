@@ -15382,7 +15382,7 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Use your <code>dfdq2</code> to calculate $\frac{\partial \mathbf{f}}{\partial\mathbf{q}}$ when</p>
-<p>q=[1,3,5], and t=3</p>
+<p>q=[1,3,5,1], and t=3</p>
 
 </div>
 </div>
@@ -15395,7 +15395,7 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">q</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">t</span><span class="o">=</span><span class="mi">3</span>
 <span class="n">dfdq2</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">t</span><span class="p">)</span>
 </pre></div>
@@ -15419,9 +15419,9 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[  2,  18,   0,   0],
+<pre>array([[  2,  18,   0, -15],
        [  0,   6, -10,   0],
-       [  0,   5,   3,   1]])</pre>
+       [  1,   5,   3,   1]])</pre>
 </div>
 
 </div>
@@ -15484,9 +15484,9 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0.00991514, 0.62014506, 0.07977086],
-       [0.49461116, 0.68890985, 0.76838821],
-       [0.87849721, 0.15890027, 0.84140143]])</pre>
+<pre>array([[0.18045469, 0.58384669, 0.21752402],
+       [0.474584  , 0.86871688, 0.7017586 ],
+       [0.81158912, 0.42518288, 0.53568079]])</pre>
 </div>
 
 </div>
@@ -15526,9 +15526,9 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0.00991514, 0.62014506, 0.07977086],
-       [0.49461116, 0.68890985, 0.76838821],
-       [0.87849721, 0.15890027, 0.84140143]])</pre>
+<pre>array([[0.18045469, 0.58384669, 0.21752402],
+       [0.474584  , 0.86871688, 0.7017586 ],
+       [0.81158912, 0.42518288, 0.53568079]])</pre>
 </div>
 
 </div>
@@ -15587,13 +15587,13 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[[-155.73126892  148.16668525  -95.13556766]
- [  78.08230477  -71.5619051    45.41220228]
- [ 218.65671158 -211.10679052  137.34300608]]
+<pre>[[ 19.80883976 -33.15955647  24.58698484]
+ [-19.15766893  53.55995964 -44.05204066]
+ [-10.27267016   5.28278526  -0.65590283]]
 ==
-[[-155.73126892  148.16668525  -95.13556766]
- [  78.08230477  -71.5619051    45.41220228]
- [ 218.65671158 -211.10679052  137.34300608]]
+[[ 19.80883976 -33.15955647  24.58698484]
+ [-19.15766893  53.55995964 -44.05204066]
+ [-10.27267016   5.28278526  -0.65590283]]
 </pre>
 </div>
 </div>
@@ -15605,9 +15605,9 @@ q_1q_4 + q_2q_3 + t\end{array}\right]$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[ 3.71814409,  2.10353965, -4.27932745],
-       [-4.13715057, -0.5016753 ,  4.41429198],
-       [ 3.42563973,  0.25871148, -2.43703445]])</pre>
+<pre>array([[ 1.59396744,  3.00995823, -4.80403516],
+       [-2.10265688, -0.76246973,  3.79084439],
+       [ 2.10728358, -0.22339524, -1.14856571]])</pre>
 </div>
 
 </div>
